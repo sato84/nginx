@@ -11,12 +11,14 @@ provisioner:
   name: dokken
 
 platforms:
-  - name: centos73
+  - name: centos75
     driver:
-      image: centos:7.3.1611
+      image: centos:7.5.1804
       pid_one_command: /usr/lib/systemd/systemd
       intermediate_instructions:
         - RUN yum -y install lsof which systemd-sysv initscripts net-tools
+      forward:
+        - 9080:80
 
 verifier:
   name: inspec

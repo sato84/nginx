@@ -1,9 +1,9 @@
 name 'nginx'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'All Rights Reserved'
-description 'Installs/Configures nginx'
-long_description 'Installs/Configures nginx'
+maintainer 'Satoshi Syuu'
+maintainer_email 'syuu.satoshi@gmail.com'
+license 'apachev2'
+description 'Installs/Configures a simple web site by using nginx'
+long_description IO.read("#{File.dirname(__FILE__)}/README.md")
 version '0.1.0'
 chef_version '>= 13.0'
 
