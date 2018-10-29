@@ -18,7 +18,8 @@ platforms:
       intermediate_instructions:
         - RUN yum -y install lsof which systemd-sysv initscripts net-tools
       forward:
-        - 9080:80
+        - 127.0.0.1:80:80
+        - 127.0.0.1:443:443
 
 verifier:
   name: inspec
@@ -31,4 +32,3 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
-

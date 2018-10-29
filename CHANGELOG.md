@@ -2,6 +2,12 @@
 
 This file is used to list changes made in each version of the nginx cookbook.
 
+# 1.1.1
+
+ENHANCEMENT:
+
+- Added zero downtime for nginx
+
 # 1.0.1
 
 Breaking Changes
