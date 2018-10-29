@@ -11,4 +11,4 @@ Initial release.
 
 # 0.1.1
 
-Integrating with CI
+Integrating with travis CI
