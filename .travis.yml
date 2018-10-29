@@ -13,14 +13,15 @@ services: docker
 before_script:
   - eval "$(/opt/chefdk/bin/chef shell-init bash)"
   - /opt/chefdk/embedded/bin/chef --version
- 
+
 script: /opt/chefdk/embedded/bin/kitchen verify
 
 matrix:
   include:
     - before_script:
-        - eval "$(/opt/chefdk/bin/chef shell-init bash)"
-        - /opt/chefdk/embedded/bin/chef --verion
-        - /opt/chefdk/embedded/bin/cookstyle --version
-    -script:
-       - /opt/chefdk/bin/chef exec cookstyle
+      - eval "$(/opt/chefdk/bin/chef shell-init bash)"
+      - /opt/chefdk/embedded/bin/chef --version
+      - /opt/chefdk/embedded/bin/cookstyle --version
+    - script:
+      - /opt/chefdk/bin/chef exec cookstyle
+

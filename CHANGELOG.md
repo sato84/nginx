@@ -2,11 +2,13 @@
 
 This file is used to list changes made in each version of the nginx cookbook.
 
-# 1.0.0
+# 1.0.1
 
 Breaking Changes
 
 Added default.conf for nginx
+
+test travis-CI
 
 # 0.1.0
 
